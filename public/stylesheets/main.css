@@ -1,0 +1,11 @@
+
+#bg-image{
+    background-image: url("/kariwatson/public/professional pics/meblackshit.png");
+    background-color: #cccccc00;
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: none;
+}
