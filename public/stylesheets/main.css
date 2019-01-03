@@ -1,11 +1,145 @@
+/*
+///////////////////////////////          Nav-Bar        //////////////////////////////////////////////
 
-#bg-image{
-    background-image: url("/kariwatson/public/professional pics/meblackshit.png");
-    background-color: #cccccc00;
-    height: 950px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border: none;
+*/
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid transparent;
+    border-radius: 5rem;
 }
+    
+.navbar-light .navbar-toggler {
+    color: #856404cf;
+    border-color: rgba(0,0,0,.1);
+}
+
+.navbar-light .navbar-brand {
+    color: #856404cf;
+}
+
+.navbar-light .navbar-nav .nav-link  {
+    
+    color: #856404cf;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #856404cf;
+}
+
+.btn-outline-light {
+    color: #856404cf;
+    border-color: #856404cf;
+}
+
+.btn:hover {
+    /* color: #212529; */
+    /* text-decoration: none; */
+    color: #856404cf;
+} 
+
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn:hover {
+    /* color: #212529; */
+    /* text-decoration: none; */
+    color: #856404cf;
+}
+
+.btn-outline-light:hover {
+    color: white;
+    background-color: #856404cf;
+    border-color: #856404cf;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/*
+
+///////////////////////////////          CONTENT         //////////////////////////////////////////////
+
+*/
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=5500&q=5560");
+
+  /* Add the blur effect */
+  filter: blur(1px);
+  -webkit-filter: blur(3px);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/*
+
+///////////////////////////////          TYPEWRITER        //////////////////////////////////////////////
+
+*/
+
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .11em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40, end),
+    blink 5s steps(10, end) infinite;
+ width: 6em;
+   
+}
+
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
